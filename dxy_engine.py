@@ -7,6 +7,8 @@ import numpy as np
 import pandas as pd
 
 # ICE US Dollar Index published weights and scale.
+# Source: ICE Futures U.S., "U.S. Dollar Index Contracts" FAQ
+# https://www.ice.com/publicdocs/futures_us/ICE_Dollar_Index_FAQ.pdf
 # EUR and GBP enter as dollars-per-unit (negative exponents).
 # JPY, CAD, SEK, CHF enter as foreign-units-per-dollar (positive exponents).
 DXY_SCALE = 50.14348112

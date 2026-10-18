@@ -104,6 +104,16 @@ def _formulas() -> None:
             r"\times USDSEK^{0.042} \times USDCHF^{0.036}"
         )
         st.markdown(
+            """
+**Source:** ICE Futures U.S., *U.S. Dollar Index Contracts* FAQ — published formula,
+weights, and the March 1973 scale constant.
+[https://www.ice.com/publicdocs/futures_us/ICE_Dollar_Index_FAQ.pdf](https://www.ice.com/publicdocs/futures_us/ICE_Dollar_Index_FAQ.pdf)
+
+Contract specs: ICE Futures U.S. Rule 15.01.
+[https://www.ice.com/publicdocs/rulebooks/futures_us/15_ICE_USDX_Futures_and_Options.pdf](https://www.ice.com/publicdocs/rulebooks/futures_us/15_ICE_USDX_Futures_and_Options.pdf)
+            """
+        )
+        st.markdown(
             r"""
 EUR/USD and GBP/USD enter as dollars per unit (negative exponents): a weaker euro
 raises $DXY$. JPY, CAD, SEK, and CHF enter as foreign units per dollar.
