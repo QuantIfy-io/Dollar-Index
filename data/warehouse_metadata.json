@@ -1,0 +1,12 @@
+{
+  "downloaded_at_utc": "2026-10-18T03:56:16.818113+00:00",
+  "source": "Yahoo chart + FRED",
+  "window_start": "2023-10-19",
+  "window_end": "2026-10-18",
+  "n_days": 753,
+  "panel_start": "2023-10-19",
+  "panel_end": "2026-10-16",
+  "last_dxy": 101.83999633789062,
+  "cpi_print": "2026-10-14",
+  "ppi_print": "2026-10-15"
+}
