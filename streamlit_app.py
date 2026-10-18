@@ -21,7 +21,7 @@ from dxy_engine import (
 from market_data import load_panel, load_warehouse_metadata
 
 st.set_page_config(
-    page_title="Why isn't the dollar declining?",
+    page_title="Dollar Index",
     page_icon=":material/currency_exchange:",
     layout="wide",
 )
@@ -125,7 +125,7 @@ def _load(refresh: bool) -> tuple[pd.DataFrame, dict]:
     return load_panel(refresh=refresh)
 
 
-st.title("Why isn't the dollar index declining?")
+st.title("Dollar Index")
 st.markdown(
     "Schwab's 15 Oct 2026 open asked what hot **September CPI** would do to the Fed path. "
     "The ICE dollar index tagged an **18-month high** on the print, gave the spike back, "

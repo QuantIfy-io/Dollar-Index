@@ -92,9 +92,9 @@ def build_cover() -> Image.Image:
     bold = _hn(78, index=1)
     gap = 10 * SCALE
     word_gap = 22 * SCALE
-    line1, line2 = "Why the Dollar", "Isn't Falling"
-    h1 = thin.getbbox("Why")[3] - thin.getbbox("Why")[1]
-    h2 = bold.getbbox("Isn't")[3] - bold.getbbox("Isn't")[1]
+    line1, line2 = "Dollar", "Index"
+    h1 = thin.getbbox("Dollar")[3] - thin.getbbox("Dollar")[1]
+    h2 = bold.getbbox("Index")[3] - bold.getbbox("Index")[1]
     block = h1 + gap + h2
     y0 = (SH - block) // 2 - 10 * SCALE
     _center_words(draw, y0, line1, thin, TEXT, word_gap)
