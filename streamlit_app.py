@@ -20,6 +20,8 @@ from dxy_engine import (
 )
 from market_data import load_panel, load_warehouse_metadata
 
+SCHWAB_UPDATE = "https://www.schwab.com/learn/story/thursdays-schwab-market-update-podcast"
+
 st.set_page_config(
     page_title="Dollar Index",
     page_icon=":material/currency_exchange:",
@@ -140,7 +142,8 @@ st.markdown(
     "Schwab's 15 Oct 2026 open asked what hot **September CPI** would do to the Fed path. "
     "The ICE dollar index tagged an **18-month high** on the print, gave the spike back, "
     "and is still **up on the year**. This app asks whether that is a dollar decline — "
-    "or a rate-differential index sitting near the highs."
+    "or a rate-differential index sitting near the highs. "
+    f"Schwab market update: [{SCHWAB_UPDATE}]({SCHWAB_UPDATE})"
 )
 _formulas()
 
@@ -377,7 +380,7 @@ if not link.empty:
 
 st.subheader("Schwab 15 Oct context")
 st.markdown(
-    """
+    f"""
 September **core CPI +0.3%** for a second month; three-month annualized **3.4%** versus a **2%** goal.
 Headline **3.7%** year over year (vs 3.6% expected). Core **2.6%** (vs 2.5%).
 October hike odds jumped from about **20%** to **35%** on CME FedWatch in Schwab's late-Wednesday read
@@ -389,6 +392,8 @@ on 15 Oct after an intraday spike toward **4.89%**. FOMC **27–28 Oct**. PCE **
 
 The question is not "did CPI print hot." It is whether the **relative** US policy path still pays you
 to hold dollars against a basket that is mostly euros.
+
+**Source:** Charles Schwab, [Thursday market update, 15 Oct 2026]({SCHWAB_UPDATE}).
     """
 )
 
